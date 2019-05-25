@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> SlideShow </title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="slide_style.css">
+    </head>
+    <body>
+        <h1>Italy</h1>
+        <div class="slides_container">
+            <div class="slide animate">
+                <img  alt="first image" src="http://www.blamethemonkey.com/wp-content/uploads/2013/06/Elia-Locardi-Whispers-From-The-Past-The-Colosseum-Rome-Italy-1280-WM.jpg" > 
+                <p class="topLeft">The Colosseum</p>           
+            </div>
+
+            <div class="slide animate">
+                <img alt="second image" src="https://www.bgsu.edu/content/bgsu/en/arts-and-sciences/world-languages-and-cultures/languages/italian/_jcr_content/top-content-slider-parsys/tertiary_column_cont/LeftColParsys/image.img.jpg/1408634152123.jpg" >
+                <p class="topLeft">Vatican City</p>
+            </div>
+
+            <div class="slide animate">
+                <img alt="third image" src="https://static2.tripoto.com/media/filter/nl/img/548580/TripDocument/1535047340_hand_luggage_only_8_5.jpg">
+                <p class="topLeft">Amalfi Coast</p>
+            </div>
+
+            <div class="slide animate">
+                 <img alt="forth image" src="https://www.leboat.co.uk/sites/default/files/styles/lbt_imgstyle_gallery_lg/public/images/gallery/murano_venice_italy_leboat_glg.jpg?itok=m4KZIjig&timestamp=1531986884">
+                 <p class="topLeft">Venice </p>
+            </div>
+            <p id="rightArr"  title="Next Image" >
+                <i class="fas fa-angle-right"></i>
+            </p>
+
+            <p id="leftArr" title="Previous Image">
+               <i class="fas fa-angle-left"></i>
+            </p> 
+            
+        </div>
+        <div class="indicator_container">
+            <span class="indicator active" title="slide 1" onclick="show_image(0)"></span>
+            <span class="indicator" title="slide 2" onclick="show_image(1)"></span>
+            <span class="indicator" title="slide 3" onclick="show_image(2)"></span>
+            <span class="indicator"title="slide 4" onclick="show_image(3)"></span>
+        </div>
+        <script src="slide_script.js"></script>
+    </body>
+</html>
